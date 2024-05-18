@@ -24,6 +24,10 @@ const patientSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  Gender:{
+    type: String,
+    enum : ["M","F","O"]
+  },
 
   Admittedin:{
       type: mongoose.Schema.Types.ObjectId,
